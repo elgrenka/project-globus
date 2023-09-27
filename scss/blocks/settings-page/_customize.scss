@@ -1,0 +1,150 @@
+
+.customize {
+
+	&__tab {
+		margin-top: 25px;
+	}
+
+	&__inner {
+		margin-top: 40px;
+	}
+
+	&__section {
+		padding: 15px;
+		border: 1px solid rgba(0, 0, 0, .1);
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		color: $gray_g;
+		font-weight: 700;
+		margin-bottom: 20px;
+
+		svg {
+			width: 25px;
+			height: 25px;
+			fill: $gray_g;
+			margin-right: 10px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		color: $orange;
+		font-weight: 600;
+		margin-bottom: 10px;
+		font-size: 14px;
+		margin-right: 40px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: $orange;
+			margin-right: 10px;
+		}
+	}
+} 
+
+.tarrifs {
+	margin-top: 40px;
+	max-width: 565px;
+
+	.group {
+		input {
+			height: 45px;
+		}
+	}
+
+	&__plane {
+		min-height: 115px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 30px;
+		border: 1px solid rgba(0, 0, 0, .1);
+		border-radius: 10px;
+
+		.group__select {
+			width: 280px;
+
+			.nice-select {
+				height: 45px !important;
+				line-height: 45px !important;
+				background-color: $white_a !important;
+			}
+		}
+	}
+
+	&__result {
+		color: $gray_g;
+		font-weight: 300;
+	}
+
+	&__bottom {
+		margin-top: 30px;
+	}
+}
+
+.api {
+	margin-top: 40px;
+	padding: 15px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 10px;
+
+	&__title {
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	&__desc {
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 1.4;
+	}
+
+	&__inline {
+		display: flex;
+		align-items: center;
+		margin-top: 25px;
+	}
+
+	.group {
+		flex: 0 0 280px;
+		margin-right: 25px;
+		margin-bottom: 0;
+	}
+
+	&__control {
+		display: flex;
+		align-items: center;
+		color: $orange;
+		font-weight: 600;
+		margin-bottom: 10px;
+		font-size: 14px;
+		margin-right: 40px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: $orange;
+			margin-right: 10px;
+		}
+	}
+}

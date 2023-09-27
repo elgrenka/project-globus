@@ -1,0 +1,172 @@
+
+.personal {
+
+	&__tab {
+		margin-top: 25px;
+	}
+
+	&__main {
+		padding: 10px 25px 35px;
+		margin-top: 20px;
+		border: 1px solid rgba(0, 0, 0, .1);
+		border-radius: 10px;
+	}
+
+	.group {
+		max-width: 585px;
+		margin-bottom: 20px;
+		input {
+			background-color: $white_a;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 15px;
+
+		.group__label {
+			margin-right: 25px;
+		}
+	}
+
+	&__img {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		overflow: hidden;
+		cursor: pointer;
+
+		&-settings {
+			position: absolute;
+			top: 5px;
+			right: -30px;
+			width: 30px;
+		}
+
+		&-control {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			margin-bottom: 5px;
+
+			svg {
+				width: 20px;
+				height: 20px;
+				fill: $gray_g;
+				
+			}
+		}
+	}
+
+	&__picture {
+		position: relative;
+	}
+
+	&__bottom {
+		margin-top: 30px;
+	}
+
+	&__password {
+		margin-top: 20px;
+
+		.personal__main {
+			max-width: 400px;
+		}
+	}
+}
+
+.notice {
+	color: $gray_g;
+	margin-top: 20px;
+
+	&__list {
+		margin-top: 20px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 15px 20px;
+		border: 1px solid rgba(0, 0, 0, .1);
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	&__main {
+		flex: 0 1 280px;
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+		margin-bottom: 30px;
+		font-size: 16px;
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		max-width: 90px;
+		margin-right: 25px;
+	}
+
+	ul {
+		font-size: 13px;
+		font-weight: 300;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__aside {
+		padding: 15px;
+		flex: 0 1 490px;
+		border: 1px solid rgba(0, 0, 0, .1);
+		border-radius: 10px;
+		background-color: $white_a;
+
+		.group {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 10px;
+
+			&__label {
+				margin-bottom: 0;
+			}
+
+			.nice-select {
+				height: 30px !important;
+				line-height:30px !important;
+				border: none !important;
+				font-size: 13px !important;
+				font-weight: 300 !important;
+			}
+
+			&__double {
+				display: flex;
+			}
+		}
+	}
+
+	&__toogle {
+		display: flex;
+		align-items: center;
+		font-size: 13px;
+		font-weight: 300;
+	}
+
+	&__middle {
+		margin: 15px 0;
+	}
+
+	&__tags {
+		margin-top: 10px;
+	}
+} 

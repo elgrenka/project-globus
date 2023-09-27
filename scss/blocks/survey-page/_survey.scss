@@ -1,0 +1,144 @@
+
+.survey {
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 25px;
+		padding: 38px 0 52px;
+		box-shadow: 0px 4px 22px rgba(52, 52, 58, 0.06);
+		border-radius: 7px;
+
+		@include maxw(480px) {
+			padding: 25px 0 35px;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 28px;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__desc {
+		margin-bottom: 44px;
+		max-width: 350px;
+		font-size: 15px;
+		line-height: 1.2;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.radio {
+		display: block;
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.scale {
+		margin-bottom: 75px;
+
+		&__list {
+			display: flex;
+			margin-bottom: 30px;
+		}
+
+		&__item {
+			margin-right: 11px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.radio + label {
+			position: relative;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 52px;
+			height: 52px;
+			box-shadow: 0px 4px 22px rgba(52, 52, 58, 0.06);
+			border-radius: 50%;
+			font-size: 15px;
+			font-weight: 300;
+
+			@include maxw(420px) {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.radio:checked + label {
+			background-color: $orange;
+			color: $white;
+		}
+
+		&__inline {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 -20px;
+			font-size: 12px;
+			font-weight: 700;
+		}
+	}
+
+	.choose {
+		margin-bottom: 49px;
+
+		&__item {
+			margin-bottom: 11px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.radio + label {
+			position: relative;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 290px;
+			height: 52px;
+			box-shadow: 0px 4px 22px rgba(52, 52, 58, 0.06);
+			border-radius: 13px;
+			font-size: 15px;
+			font-weight: 300;
+		}
+
+		.radio:checked + label {
+			background-color: $orange;
+			color: $white;
+		}
+	}
+
+	.comment {
+		width: 412px;
+		margin-bottom: 49px;
+
+		@include maxw(480px) {
+			width: 100%;
+			margin-bottom: 35px;
+		}
+
+		textarea {
+			min-height: 125px;
+			padding: 15px;
+			border: 1px solid $gray_a;
+			border-radius: 12px;
+		}
+	}
+
+	&__btn {
+		width: 151px;
+	}
+}

@@ -1,0 +1,105 @@
+.table {
+
+	&__btn {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: $gray_g;
+		}
+	}
+
+	&__head {
+		display: flex;
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
+		background-color: $white_a;
+
+		.table__item {
+			color: $gray_g;
+			font-weight: 700;
+		}
+	}
+
+	&__row {
+		display: flex;
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+		&:nth-child(odd) {
+			background-color: $white_a;
+		}
+
+	}
+ 
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		min-height: 48px;
+		padding: 8px;
+		font-weight: 300;
+		border-right: 1px solid rgba(0, 0, 0, .1);
+
+		&:first-child {
+			border-left: 1px solid rgba(0, 0, 0, .1);
+		}
+	}
+
+	&__id {
+		flex: 0 0 85px;
+		color: $gray_g;
+		font-weight: 600;
+	}
+
+	&__person {
+		flex: 0 1 260px;
+	}
+
+	&__phone {
+		flex: 0 0 130px;
+	}
+
+	&__town {
+		flex: 0 1 110px;
+	}
+
+	&__scores {
+		flex: 0 0 80px;
+	}
+
+	&__status {
+		flex: 0 0 130px;
+	}
+
+	&__activity {
+		flex: 0 0 110px;
+	}
+
+	&__chat {
+		flex: 0 1 223px;
+
+		&-link {
+			display: flex;
+			align-items: center;
+			color: $orange;
+			font-weight: 500;
+
+			svg {
+				width: 24px;
+				height: 24px;
+				fill: $orange;
+				margin-right: 12px;
+			}
+		}
+	}
+}

@@ -1,0 +1,95 @@
+.button-toggle {
+	flex-shrink: 0;
+    position: relative;
+    top: 0;
+    width: 43px;
+    height: 17px;
+    border-radius: 30px;
+    background-color: $orange;
+    margin-right: 10px;
+}
+
+
+.toggle-checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* Button 1 */
+ .knobs:before
+{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -8px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+ .toggle-checkbox:checked + .knobs:before {
+    content: '';
+    left: 20px;
+    background-color: $white;
+}
+
+
+ .knobs,  .knobs:before,  .layer
+{
+    transition: 0.3s ease all;
+}
+
+.button-toggle-gray {
+   background-color: $gray_g;
+    width: 35px;
+
+    .knobs:before
+    {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -5px;
+        width: 23px;
+        height: 23px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        background-color: $white;
+        border: 1px solid rgba(0, 0, 0, .1);
+        border-radius: 50%;
+        transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+    }
+
+     .toggle-checkbox:checked + .knobs:before {
+        content: '';
+        left:17px;
+        background-color: $white;
+    }
+
+}

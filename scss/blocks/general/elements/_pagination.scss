@@ -1,0 +1,82 @@
+.subpagination {
+	display: flex;
+	align-items: center;
+
+	&__controls {
+		display: flex;
+		margin-right: 24px;
+	}
+
+	&__prev {
+		transform: rotate(180deg);
+		margin-right: 18px;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		border: 2px solid $gray_g;
+		cursor: pointer;
+
+		svg {
+			width: 10px;
+			height: 10px;
+			fill: $gray_g;
+		}
+	}
+
+	&__primary {
+		border: 2px solid #aaaaaa;
+
+		svg {
+			width: 10px;
+			height: 10px;
+			fill: #aaaaaa;
+		}
+	}
+
+	&__value {
+		color: $gray_g;
+		font-weight: 600;
+	}
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+	font-size: 18px;
+	font-weight: 300;
+
+	&__title {
+		color: $gray_g;
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	&__list {
+		display: flex;
+		align-items: flex-end;
+		margin-left: 22px;
+	}
+
+	&__item {
+		margin-right: 15px;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+
+			border: 1px solid $gray_g;
+			text-align: center;
+			font-size: 16px;
+		}
+	}
+}
